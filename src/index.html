@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ProgressiveWebAppExemple</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2196F3">
+
+  <!-- JS -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+  <!-- MY JS -->
+
+  <!-- CSS -->
+
+  <!-- MY CSS -->
+
+</head>
+
+<body>
+  <app-root>Loading...</app-root>
+</body>
+
+</html>
